@@ -1,0 +1,11 @@
+{
+  "name": "af-elements",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "开源ui组件库"
+  },
+  "author": "pleasestartyourperformance",
+  "license": "ISC"
+}
