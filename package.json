@@ -2,7 +2,7 @@
   "name": "af-elements",
   "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "开源ui组件库"
   },
