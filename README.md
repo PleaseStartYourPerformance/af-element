@@ -25,7 +25,8 @@ type|按钮类型|String|primary/success/info/warning/danger|无类型
 @click|点击事件|-|-|-
 
 
-slot
+# slot
+
 名称|说明
 --:|--:
 -|自定义内容
