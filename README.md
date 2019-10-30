@@ -22,7 +22,9 @@ Vue.use(afComponents)
 --|:--:|--:|--:|--:
 size|按钮size|String|mini/small/medium|mini
 type|按钮类型|String|primary/success/info/warning/danger|无类型
+round|是否圆角|Boolean|true/false|false
 @click|点击事件|-|-|-
+
 
 
 # slot

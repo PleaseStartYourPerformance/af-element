@@ -1,9 +1,10 @@
 <template>
   <div>
     <button
-    :class="['af-button',afColor,afSize]" 
+    :class="['af-button',afColor,afSize,afRound]"
     @click="handleClick"
     :type="type"
+    :disabled="disabled"
     >
     <slot></slot>
     </button>
@@ -21,7 +22,15 @@ export default {
       size:{
           type:String,
           default:'mini'
-      }
+      },
+      round:{
+        type:Boolean,
+        default:false
+      },
+    disabled:{
+      type:Boolean,
+      default:false
+    }
      
   },
   computed:{
@@ -30,17 +39,18 @@ export default {
                     this.type==='success' ? 'af-button-success' :
                     this.type === 'info' ? 'af-button-info':
                     this.type === 'warning'? 'af-button-warning' :
-                    this.type === 'danger'? 'af-button-danger' :
-                     ''
+                    this.type === 'danger'? 'af-button-danger' : ''
       return CLASS                    
     },
     afSize(){
       const SIZE = this.size === 'mini' ? 'af-size-mini' :
                   this.size === 'small ' ? 'af-size-small ' : ''
-      return SIZE            
+      return SIZE
+    },
+    afRound(){
+      const round = this.round ? 'af-button-round' : ''
+      return round
     }
-
-    
   },
   methods:{
     handleClick(data){
@@ -52,6 +62,7 @@ export default {
 </script>
 
 <style scoped>
+  @import '@/public/css/index.css';
   .af-button{
     display: inline-block;
       line-height: 1;
@@ -108,5 +119,9 @@ export default {
     padding: 9px 15px;
     font-size: 12px;
     border-radius: 3px;
+  }
+  .af-button-round{
+    border-radius: 20px;
+    padding: 12px 23px;
   }
 </style>
