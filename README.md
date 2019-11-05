@@ -1,18 +1,21 @@
 # af-element
-UI-开源组件库，会封装一些element-ui的组件，使其更方便达到我们的需求，也会独自开发一些组件使用，因时间有限不定期更新中
+UI-开源组件库，会封装一些element-ui的组件，使其更方便达到我们的需求，
+也会独自开发一些组件使用，因时间有限不定期更新中
 # 安装
 
 ```
 npm i af-elements
+npm i element-ui -S
 ```
 # 在main.js引入
 ```
 import afComponents from 'af-element'
+import ElementUI from 'element-ui';
+Vue.use(ElementUI);
 Vue.use(afComponents)
 ```
 # 使用示例
 ```
-
 <af-button ><af-button/>
 ```
 
@@ -33,5 +36,68 @@ round|是否圆角|Boolean|true/false|false
 --:|--:
 -|自定义内容
 
+# biglog弹框（使用element封装）
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+show|显示隐藏|Boolean|true/false|false
+title|主标题名|String|自定义|新建方案向导
+tabs|左侧标签页|Array|无|[]
+ruleFun|内部校验回调|Function|无|false
+
+tabs预览
+```js
+  var tabs=[
+          {
+            label:'xxx1',//tabs名字
+            name:"1",//第一步 必须是"1"
+            disable:false,//是否禁用
+            slot:'setmsg'//父组件具名插槽名称
+          },
+          {
+            label:'xxx2',
+            name:"2",
+            disable:true,
+            slot:'setmonth'
+          },
+          {
+            label:'xxx3',
+            name:"3",
+            disable:true,
+            slot:'setpower'
+          },
+          {
+            label:'xxx4',
+            name:"4",
+            disable:true,
+            slot:'setbuy'
+          },
+        ],
+```
+
+总体预览
+
+```html
+  <af-biglog
+        ref="bigLog"
+        :title="digTitle"
+        :show.sync="digShow"
+        @nextCallback="nextCallback"
+  
+        @computedSave ="computedSave"
+        :tabs.sync="tabs"
+        :ruleFun="ruleFun"
+    >
+          <!--nextCallback为下一步回调返回值res为第几步-->
+         <!--computedSave未保存回调-->
+      <div slot="setmsg" class="biglog-class">
+        
+      </div>
+      <div slot="setmonth">
+     
+      </div>
+      <div slot="setpower"> </div>
+      <div slot="setbuy"> </div>
+    </af-biglog>
+```
 # 结语
 持续更新中
