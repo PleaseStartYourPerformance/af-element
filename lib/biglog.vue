@@ -19,7 +19,7 @@
 </template>
 <script>
   export default {
-    name: "compete",
+    name: "biglog",
     data() {
       return {
         isShow:false,
