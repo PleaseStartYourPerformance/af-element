@@ -99,5 +99,17 @@ tabs预览
       <div slot="setbuy"> </div>
     </af-biglog>
 ```
+# drawer查询面板（使用element封装）
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+name|名称|String|自定义|查询面板
+modal|显示隐藏|Boolean|true,false|false
+
+
+```html
+    <base-drawer >
+   
+    </base-drawer>
+```
 # 结语
 持续更新中
