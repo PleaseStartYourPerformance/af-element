@@ -62,7 +62,6 @@ export default {
 </script>
 
 <style scoped>
-  @import '@/public/css/index.css';
   .af-button{
     display: inline-block;
       line-height: 1;

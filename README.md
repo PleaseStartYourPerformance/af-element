@@ -71,7 +71,7 @@ tabs预览
             disable:true,
             slot:'setbuy'
           },
-        ],
+        ]
 ```
 
 总体预览
@@ -111,5 +111,18 @@ modal|显示隐藏|Boolean|true,false|false
    
     </base-drawer>
 ```
+# 导出（使用element封装）
+
+记得引入axios
+
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+buttonName|按钮名称|String|自定义|导出
+path|接口路径|String|自定义|''
+data|接口参数|Object|无|{}
+type|接口类型|get/post|无|get
+fileName|文件名字|String|自定义|文件
+fileSuffix|文件后缀|String|自定义|.xls
+
 # 结语
 持续更新中
