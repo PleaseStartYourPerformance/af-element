@@ -125,7 +125,11 @@ fileName|文件名字|String|自定义|文件
 fileSuffix|文件后缀|String|自定义|.xls
 
 # 大屏标签展示
+```html
 <af-tabCard>
+```
+
+
 参数|说明|类型|可选值|默认值
 --|:--:|--:|--:|--:
 data|数据结构|Object|{val:'',text:''}|{}
