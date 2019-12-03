@@ -128,7 +128,7 @@ fileSuffix|文件后缀|String|自定义|.xls
 <af-tabCard>
 参数|说明|类型|可选值|默认值
 --|:--:|--:|--:|--:
-data|数据结构|Object|{val:'',text:''}|{}}
+data|数据结构|Object|{val:'',text:''}|{}
 topStyle|上文字样式|String|自定义|'font-size: 32px;'
 bottomStyle|下文字样式|String|自定义|'font-size: 16px;color: #a9a9a9;'
 
