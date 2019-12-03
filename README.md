@@ -124,5 +124,16 @@ type|接口类型|get/post|无|get
 fileName|文件名字|String|自定义|文件
 fileSuffix|文件后缀|String|自定义|.xls
 
+# 大屏标签展示
+<af-tabCard>
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+data|数据结构|Object|{val:'',text:''}|{}}
+topStyle|上文字样式|String|自定义|'font-size: 32px;'
+bottomStyle|下文字样式|String|自定义|'font-size: 16px;color: #a9a9a9;'
+
+slot:自定义
+
+
 # 结语
 持续更新中
