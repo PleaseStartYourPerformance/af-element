@@ -126,7 +126,11 @@ fileSuffix|文件后缀|String|自定义|.xls
 
 # 大屏标签展示
 ```html
-<af-tabCard>
+<af-tabCard
+  :data="data"
+  :topStyle="topStyle"
+  :bottomStyle="bottomStyle"
+/>
 ```
 
 
