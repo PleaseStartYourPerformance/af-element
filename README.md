@@ -158,12 +158,22 @@ header|表头|Array|header:[{title:'123'},{title:'qaq'},{title:'qwe'}]|[]
 body|列|Array| body:[{list:['测试1',2,3,4], level:1},{list:['测试2',6,7,8], level:2},{list:['测试3',29,39,49], level:3}|[]
 
 > 注若以列为表头可设置header=[],body可以为[qaq:{chidren:[]}]包含chidren的格式内部有做数组扁平化操作
-
 > import { delayer } from '@/assets/js/tool' 可以去我的github引入tools.js
-
 > 地址：https://github.com/PleaseStartYourPerformance/js-tools/tree/master/src
 
+# Vue富文本编译器vue-quill-editor组件封装
+```html
+     <edit
+     :noun="noun"
+     >
+     </edit>
+```
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+noun|无|String|自定义|null
+editorOption|工具栏|Object|自定义|{}
 
+>学习文章----https://blog.csdn.net/div_ma/article/details/79536634
 
 # 结语
 持续更新中
