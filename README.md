@@ -175,5 +175,24 @@ editorOption|工具栏|Object|自定义|{}
 
 >学习文章----https://blog.csdn.net/div_ma/article/details/79536634
 
+# Echarts组件封装
+
+```html
+ <charts 
+     style="height: 200px" 
+     :option="lineOption" 
+     id="pieChart1" />
+```
+
+参数|说明|类型|可选值|默认值
+--|:--:|--:|--:|--:
+id|用到得id不传会使用随机数|String|自定义|随机数
+option|option|Object|自定义|{}
+citys|地图json|Object|自定义|{}
+className|class类|String|自定义|chart
+width|宽|String|自定义|'100%'
+height|高|String|自定义|'100%'
+
+
 # 结语
 持续更新中
