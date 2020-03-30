@@ -199,6 +199,16 @@ height|高|String|自定义|'100%'
 含有接口联调具体请看具体代码默认数据都包含
 
 # 左侧弹框组件
+```html
+ <diglogLeft 
+     :diglog_tab1_style="diglog_tab1_style" 
+    :diglog_tab2_style="diglog_tab2_style" 
+    :show_style="0"
+    :show_style="200"
+     />
+```
+
+参数|说明|类型|可选值|默认值
 --|:--:|--:|--:|--:
 diglog_tab1_style|自定义最外层div样式(可设置宽高)|Object|自定义|{}
 diglog_tab2_style|自定义按钮div样式|Object|自定义|{}
