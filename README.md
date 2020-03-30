@@ -1,6 +1,7 @@
 # af-element
 UI-开源组件库，会封装一些element-ui的组件，使其更方便达到我们的需求，
 也会独自开发一些组件使用，因时间有限不定期更新中
+项目无法启动请下载后自行查看代码使用
 # 安装
 
 ```
@@ -193,6 +194,16 @@ className|class类|String|自定义|chart
 width|宽|String|自定义|'100%'
 height|高|String|自定义|'100%'
 
+# 日历组件-vue版本
 
-# 结语
+含有接口联调具体请看具体代码默认数据都包含
+
+# 左侧弹框组件
+--|:--:|--:|--:|--:
+diglog_tab1_style|自定义最外层div样式(可设置宽高)|Object|自定义|{}
+diglog_tab2_style|自定义按钮div样式|Object|自定义|{}
+show_style|弹出距离（原理margin-left）|String|自定义|'0'
+hide_style|隐藏的距离|String|自定义|'0'
+
+ 结语
 持续更新中
